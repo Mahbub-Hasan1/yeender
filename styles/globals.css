@@ -1,0 +1,436 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% Navbar style area started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+.navbar-area {
+  background-color: #080b1a;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+  margin-bottom: 50px;
+}
+
+.navbar {
+  background-color: #080b1a;
+  color: #fff;
+  height: 100%;
+}
+
+.NavLogo {
+  width: 80px;
+}
+
+.navbar-toggler {
+  background-color: #fff;
+  color: #080b1a;
+}
+
+.nav-item {
+  padding: 0px 10px;
+}
+
+.nav-item a {
+  color: #fff;
+  font-size: 20px;
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% Header style area started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+header {
+  background: url("https://i.imgur.com/GaTXymp.jpg") 0 0 / cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+
+.header-contents {
+  color: #fff;
+}
+
+.header-contents h3 {
+  font-size: 50px;
+}
+
+.header-contents button {
+  border: 2px solid #fff;
+  padding: 10px 40px;
+  font-weight: 900;
+  border-radius: 50px;
+  background: #080b1a;
+  color: #fff;
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% About area style started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+.about-area {
+  height: 600px;
+}
+
+.about-img {
+  width: 90%;
+}
+
+.about-content-texts h6 {
+  font-weight: 400;
+  margin: 0px 0px 10px 0px;
+}
+
+.about-content-texts h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.about-content-texts h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  margin: 20px 0px;
+  color: #5a5a5a;
+}
+
+.about-content-texts p {
+  font-size: 17px;
+  color: #404040;
+  font-weight: 400;
+}
+
+.about-details-btn {
+  margin: 40px 0px;
+  font-weight: 700 !important;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .about-area {
+    height: auto;
+  }
+  .about-img {
+    margin: 20px 0px;
+    width: 100%;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% Feature area style started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+.feature-area {
+  margin: 50px 0px;
+}
+
+@media (max-width: 768px) {
+  .feature-area {
+    text-align: center;
+  }
+  .feature-items-card {
+    border: 2px solid #404040;
+    padding: 30px 0px;
+  }
+  .feature-items-card {
+    margin: 4px;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%%%%%%%% server area style started %%%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+/* .service-area {
+  background: url("https://i.imgur.com/GaTXymp.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px 0px;
+} */
+
+.service-main-title {
+  margin: 20px 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.service-contents .card {
+  margin-bottom: 20px;
+  background-color: #f8f9fc;
+}
+
+.service-items {
+  overflow: hidden;
+}
+
+.service-overlay {
+  background-color: #080b1abe;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.service-items:hover .service-overlay {
+  top: 0;
+}
+
+.service-title {
+  padding: 20px;
+  text-align: center;
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.service-title h5 {
+  margin: 0px;
+  font-weight: 700;
+}
+
+.ser-overlay-p {
+  font-style: oblique;
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%% clients review area style started %%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+@import "react-slideshow-image/dist/styles.css";
+
+.review-area {
+  background: #ead5a8;
+  padding: 100px 0px;
+}
+
+.review-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.each-slide {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .each-slide {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%% portfolio area style started %%%%%%%%%%%%%%%%%%
+*********************************************************************/
+
+.portfolio-area {
+  margin: 50px 0px;
+}
+
+.portfolio-title {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.projects-card {
+  transition: 1s;
+  cursor: pointer;
+}
+
+.projects-card :hover {
+  /* box-shadow: 5px 5px 20px #c7d2f3; */
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px #c7d2f3, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px #c7d2f3, 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px #c7d2f3, 0 0 40px #c7d2f3 inset;
+}
+
+.project-title {
+  font-weight: 700;
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/***************************************************$$
+$$$ Contact Us-area style start
+****************************************************$$*/
+
+#contact-area {
+  padding: 50px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-content-area {
+  box-shadow: 0px 5px 20px 20px #f5f5fb;
+}
+
+.form-title {
+  margin: 0px;
+  padding-bottom: 35px;
+  font-weight: 700;
+  color: #424242;
+}
+
+.form-content-area {
+  padding: 30px;
+}
+.contact-form input {
+  border: 1px solid #e4e4e4 !important;
+}
+.contact-form input::placeholder {
+  padding: 15px;
+  color: #757575;
+  font-weight: 500;
+}
+.contact-form textarea {
+  height: 200px;
+  border: 1px solid #e4e4e4;
+  padding: 15px;
+  font-weight: 500;
+}
+
+.contact-form textarea::placeholder {
+  padding: 15px;
+  color: #757575;
+  font-weight: 500;
+}
+
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.contact-submitBtn {
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: 2px solid #080b1a;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.contact-submitBtn:hover {
+  background: #080b1a !important;
+  color: #fff;
+  border: 2px solid lightblue;
+}
+
+/* ------------------------------ */
+
+.cntInfo-content {
+  background-color: #080b1a;
+  color: #fff;
+}
+
+#cntInfo_title {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/*********************************************************************
+%%%%%%%%%%%%%%%%% Footer area style started %%%%%%%%%%%%%%%%%%
+*********************************************************************/
+.footer-area {
+  padding: 5 0px 0px 0px 0px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f8f9fc;
+}
+
+.ftr-countEv {
+  background: url("https://cdn.pixabay.com/photo/2018/03/03/20/02/laptop-3196481__340.jpg")
+    0 0 / cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  color: #fff;
+  font-weight: bold;
+}
+.ftr-cuntEv-content {
+  background: #080b1ac0;
+  height: 100%;
+  width: 100%;
+}
+.ftr-countEv h4 {
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .ftr-countEv {
+    height: 300px;
+  }
+}
+/* ------------------------- */
+
+.ftrLogo {
+  width: 160px;
+}
+
+.ftr-journey-des {
+  font-size: 16px;
+  color: gray;
+}
+
+#footer-contactBtn {
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: 2px solid #080b1a;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+#footer-contactBtn:hover {
+  background: #080b1a !important;
+  color: #fff;
+  border: 2px solid lightblue;
+}
+
+/* --------------------- */
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer-link {
+  font-size: 16px;
+}
+
+.footer-link :hover {
+  padding-left: 2px;
+  transition: 0.3s;
+}
+
+.footer-Policy {
+  color: rgb(156, 156, 156);
+}
+
+/* ------ */
+.bubMahbub {
+  color: rgb(190, 188, 188);
+}
+/* ------ */
+/* 
+@media (max-width: 600px) {
+  .footer-area {
+    text-align: center;
+  }
+} */
