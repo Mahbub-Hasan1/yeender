@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
             </Head>
 
 
-            <div style={{paddingBottom: '94px'}}>
+            <div className="fixdNavbar">
                 <Navbar />
             </div>
 

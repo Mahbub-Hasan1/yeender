@@ -18,6 +18,20 @@ a {
 /*********************************************************************
 %%%%%%%%%%%%%%%%%%%%%%% Navbar style area started %%%%%%%%%%%%%%%%%%%
 *********************************************************************/
+
+.fixdNavbar {
+  padding-bottom: 94px;
+}
+@media (max-width: 1199px) {
+  .fixdNavbar {
+    padding-bottom: 93px !important;
+  }
+}
+@media (max-width: 991px) {
+  .fixdNavbar {
+    padding-bottom: 60px !important;
+  }
+}
 .navbar-area {
   background-color: #080b1a;
   width: 100%;
